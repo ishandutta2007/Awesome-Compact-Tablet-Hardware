@@ -75,9 +75,9 @@ Welcome to the definitive guide on **compact tablet hardware** (8–9 inch form 
 
 ## 🔓 Open-Source Software Projects
 
-Sorted by star count (descending). The star badge beside each repo links directly to its stargazers page.
+Sorted by Stars_Count (descending). The Stars_Badge beside each repo links directly to its stargazers page.
 
-| Repository & Project 🚀 | Description & Features 📝 | Star Badge 🌟 |
+| Repository & Project 🚀 | Description & Features 📝 | Stars_Badge 🌟 |
 |:---|:---|:---|
 | **[LineageOS](https://github.com/LineageOS/android)** 📱 | **Leading alternative Android OS.** Brings updated Android releases to legacy compact tablets like Galaxy Tab series. | [<img src="https://img.shields.io/github/stars/LineageOS/android?style=social&color=white" alt="LineageOS Stars"/>](https://github.com/LineageOS/android/stargazers) |
 | **[Readest](https://github.com/bilingify/readest)** 📚 | **Modern open-source ebook reader for tablets & e-ink.** EPUB, PDF, MOBI, AZW3, FB2, CBZ support, dual-page mode, offline TTS. | [<img src="https://img.shields.io/github/stars/bilingify/readest?style=social&color=white" alt="Readest Stars"/>](https://github.com/bilingify/readest/stargazers) |
@@ -100,7 +100,7 @@ Contributions to expand this list of **compact hardware** and **tablet open-sour
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add your entry** to `README.md` in the appropriate category following table conventions.
-3. 🔗 Ensure links, specs, and star badges are accurate.
+3. 🔗 Ensure links, specs, and Stars_Badges are accurate.
 4. 🚀 **Open a Pull Request** with a brief summary of the added project/hardware.
 
 If you find this list helpful, please consider **starring** 🌟 the repo to help others discover it!
