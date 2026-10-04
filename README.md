@@ -1,159 +1,139 @@
-# Awesome-Compact-Tablet-Hardware
-
-# Awesome-Compact-Tablet-Hardware
-
-
-
-**Curated List of Commercial Hardware & Open-Source Software Projects**
-
-*Focused on Compact Tablets (8–9"), Linux/Android Compatibility & Stylus Productivity*
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **compact tablet hardware** and **open-source software projects** that maximize their potential. These tools help users choose the right sub-9-inch device and unlock its capabilities with free, open-source operating systems and stylus-optimized applications.
-
-
-
-**Examples** include Apple iPad mini, Lenovo Legion Y700, Xiaomi Pad Mini, HUAWEI MatePad Mini OLED, Redmagic Astra OLED, Microsoft Surface Go, Samsung Galaxy Tab A9, Amazon Fire HD 8, and Alldocube iPlay 50 Mini (the category leaders).
-
-
-
-**Open-source emphasis**: The compact tablet hardware market is **dominated by commercial vendors** with locked bootloaders, but a **vibrant open-source ecosystem** exists to extend these devices. **GrapheneOS** provides hardened Android for Pixel devices (including Pixel Tablet) , **postmarketOS** supports 200+ devices including older tablets , and **LineageOS** officially supports Galaxy Tab models . For stylus work, **Linwood Butterfly** and **NexaNote** offer open-source note-taking alternatives to Samsung Notes . This section documents the hardware landscape and the open-source software that extends these devices' lives.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## 📖 Table of Contents
-
-
-
-- [🔓 Commercial Hardware](#-commercial-hardware)
-
-- [🔓 Open-Source Software Projects](#-open-source-software-projects)
-
-- [🤝 How to Contribute](#-how-to-contribute)
-
-- [⚠️ Disclaimer](#-disclaimer)
-
-
-
-## 🔓 Commercial Hardware
-
-
-
-> **📊 Market Context**: The compact tablet segment (8–9 inches) is experiencing a **renaissance in 2026**, with flagship-class hardware now available in sub-9-inch form factors. **Xiaomi Pad Mini** leads on thinness at 6.5mm with Dimensity 9400+, **Lenovo Legion Y700** dominates gaming with Snapdragon 8 Elite Gen 5 and 165Hz displays , and **Apple iPad mini** remains the predictable standard at 8.3 inches and 297g . The market is **highly fragmented** — no single vendor dominates, and Linux support varies wildly by model. For open-source enthusiasts, **Pixel Tablet with GrapheneOS** is the only officially supported privacy-hardened option , while older Galaxy Tab models have LineageOS support .
-
-
-
-| Hardware | Description | Pricing (Starting Tier) | Linux/Open-Source Support | Company Size |
-
-|----------|-------------|------------------------|--------------------------|--------------|
-
-| **[Apple iPad mini (7th Gen)](https://www.apple.com/ipad-mini/)** | **The benchmark compact tablet.** 8.3" Liquid Retina, A17 Pro, 297g, 6.3mm. Supports Apple Pencil Pro and Apple Intelligence (US) . | **$499** (128GB Wi-Fi); **$649** (256GB); **$849** (512GB)  | **None** — locked bootloader. No Linux installation possible. | **~$400B revenue (Apple FY2025 est.)** |
-
-| **[Lenovo Legion Y700 (Gen 5)](https://www.lenovo.com/)** | **Best compact tablet for gaming.** 8.8" 3K 165Hz, Snapdragon 8 Elite Gen 5, 9000mAh, dual USB-C, microSD, JBL stereo . | **~48,000 ₽** (~$550) in Russia (parallel import); China pricing lower  | **None** — Android 16 with Chinese firmware. No official Linux support. | **~$60B revenue (Lenovo FY2025 est.)** |
-
-| **[Xiaomi Pad Mini](https://www.mi.com/)** | **Thinnest flagship compact tablet.** 6.5mm thickness, Dimensity 9400+, 3K 165Hz display, dual USB-C, 67W charging with bypass power . | **~$500–$600** (est., China market) | **None** — Android with MIUI/HyperOS. No Linux support. | **~$40B revenue (Xiaomi FY2025 est.)** |
-
-| **[HUAWEI MatePad Mini OLED](https://consumer.huawei.com/)** | **Lightest OLED compact tablet.** 260g, ~5mm thickness, Kirin 9020, HarmonyOS 5.1, stylus support, satellite connectivity . | **~$600–$800** (est., China market) | **None** — HarmonyOS with no bootloader unlock. No Linux support. | **~$100B revenue (Huawei FY2025 est.)** |
-
-| **[Pixel Tablet](https://store.google.com/)** | **The only GrapheneOS-supported tablet.** 11" (larger than typical compact), Tensor G2, Android 16. **GrapheneOS 17** in development . | **$499** (128GB); **$599** (256GB) | **GrapheneOS**: Fully supported. **LineageOS**: Officially supported . **Linux**: No direct support. | **~$350B revenue (Alphabet FY2025)** |
-
-| **[Microsoft Surface Go](https://www.microsoft.com/surface/)** | **The most Linux-friendly compact Windows tablet.** 10.5" (borderline compact), Intel Pentium/Core, kickstand. **linux-surface** project provides kernel/drivers . | **$399** (Go 3 base); **$549** (Go 4) | **Linux**: Community-supported via **linux-surface** kernel . Touchscreen, pen, keyboard work with patches. | **~$281B revenue (Microsoft FY2025)** |
-
-| **[Samsung Galaxy Tab A9](https://www.samsung.com/)** | Budget compact Android tablet. 8.7" LCD, Helio G99, expandable storage. **LineageOS**: Galaxy Tab A 8.0 2019 officially supported . | **~$150–$200** | **LineageOS**: Older Galaxy Tab A 8.0 (2019) officially supported . A9 support may vary. | **~$250B revenue (Samsung FY2025 est.)** |
-
-| **[Amazon Fire HD 8](https://www.amazon.com/)** | Budget Amazon tablet with Fire OS (Android fork). 8" HD, expandable storage. **Open-source support**: Limited; Fire Toolbox for debloating. | **$99** (32GB); **$139** (64GB) | **None** — locked bootloader. No LineageOS/GrapheneOS support. | **~$638B revenue (Amazon FY2025)** |
-
-| **[Alldocube iPlay 50 Mini](https://www.alldocube.com/)** | **Budget 8.4" tablet with near-stock Android.** Unisoc T606, 4GB RAM, 64GB storage. Popular for LineageOS/GSI experiments. | **~$100–$150** | **GSI/LineageOS**: Often compatible via Project Treble GSI images. Check XDA forums for model-specific builds. | **Private (Chinese OEM)** |
-
-
-
-## 🔓 Open-Source Software Projects
-
-
-
-Sorted by star count (descending). Star badge links to each repo's stargazers page.
-
-
-
-| Repo | Description | Stars |
-
-|---|---|---|
-
-| **[Readest](https://github.com/bilingify/readest)** — **Modern, open-source ebook reader for people who read a lot.** Open EPUB, PDF, MOBI, AZW3, FB2, CBZ, TXT, Markdown. Paginated/scrolling modes, e-ink optimized, up to 4 books side-by-side, TTS with offline voices, translations, sync via Readest Cloud or bring-your-own (Google Drive, OneDrive, WebDAV, S3). **Android, iOS, macOS, Windows, Linux, Web** . **MIT/AGPL**. | [![Stars](https://img.shields.io/github/stars/bilingify/readest?style=social&color=white)](https://github.com/bilingify/readest/stargazers) | ~5,000 |
-
-| **[Linwood Butterfly](https://github.com/LinwoodCloud/Butterfly)** — **Powerful, minimalistic, cross-platform open-source note-taking app.** Infinite canvas, stylus support, import/export PDF/SVG/images, WebDAV sync, offline use, FOSS. **Android, Windows, Linux, Web** . | [![Stars](https://img.shields.io/github/stars/LinwoodCloud/Butterfly?style=social&color=white)](https://github.com/LinwoodCloud/Butterfly/stargazers) | ~2,000 |
-
-| **[Episteme Reader](https://github.com/Aryan-Raj3112/episteme)** — **Offline-first, privacy-focused document and ebook reader.** Kotlin Multiplatform. Supports PDF, EPUB, MOBI/AZW3, FB2, DOCX, ODT, TXT, Markdown, HTML, comics (CBZ/CBR/CB7). PDF ink annotations, highlighting, reflow mode, text-to-speech, themes. **OSS Offline edition** has network permissions stripped . | [![Stars](https://img.shields.io/github/stars/Aryan-Raj3112/episteme?style=social&color=white)](https://github.com/Aryan-Raj3112/episteme/stargazers) | ~500 |
-
-| **[NexaNote](https://github.com/TheZupZup/NexaNote)** — **Self-hosted note-taking built for handwriting, stylus input, and privacy.** Docker support, local-first SQLite, optional sync via REST API/WebDAV. **Android APK** via GitHub Releases, Obtainium-compatible. MPL-2.0 . | [![Stars](https://img.shields.io/github/stars/TheZupZup/NexaNote?style=social&color=white)](https://github.com/TheZupZup/NexaNote/stargazers) | ~200 |
-
-| **[GrapheneOS](https://grapheneos.org/)** — **The most secure Android distribution.** Hardened AOSP with verified boot, sandboxed Play Services, and privacy protections. **Pixel Tablet** is the only officially supported tablet . | [![GrapheneOS](https://img.shields.io/badge/GrapheneOS-Project-blue)](https://grapheneos.org/) | N/A |
-
-| **[LineageOS](https://lineageos.org/)** — **The leading alternative Android distribution.** Officially supports **Galaxy Tab A 8.0 2019, Tab A7 10.4, Tab S5e, Tab S6 Lite, Tab S7**, and others . Gives new life to older tablets. | [![LineageOS](https://img.shields.io/badge/LineageOS-Project-blue)](https://lineageos.org/) | N/A |
-
-| **[postmarketOS](https://postmarketos.org/)** — **Independent Linux OS for smartphones and tablets.** Supports **200+ devices** including **Samsung Galaxy Tab A 8.0/9.7, ASUS MeMo Pad 7, Google Nexus 10, Lenovo A6000** . Extends life of older devices with security updates. | [![postmarketOS](https://img.shields.io/badge/postmarketOS-Project-blue)](https://postmarketos.org/) | N/A |
-
-| **[Mobian](https://github.com/tabletseeker/mobian)** — **Android-like OS using 100% Debian FOSS and 0% Google services.** For touch devices including **Surface Pro, Zenbook, ThinkPad, Pinephone**. On-screen keyboard support, kernel packages for Surface Pro 3-10 via **linux-surface** . | [![Stars](https://img.shields.io/github/stars/tabletseeker/mobian?style=social&color=white)](https://github.com/tabletseeker/mobian/stargazers) | ~100 |
-
-
-
-**Additional open-source options worth exploring:**
-
-
-
-| Repo | Description |
-
-|---|---|
-
-| **[linux-surface](https://github.com/linux-surface/linux-surface)** — Kernel and drivers for Microsoft Surface devices including Surface Go. Touchscreen, pen, keyboard support via patched kernel . | [![Stars](https://img.shields.io/github/stars/linux-surface/linux-surface?style=social&color=white)](https://github.com/linux-surface/linux-surface/stargazers) |
-
-| **[openKylin](https://docs.openkylin.top/)** — Chinese open-source OS with **deep tablet mode optimization**, virtual keyboard, multi-terminal collaboration (Android interconnection), and KMRE Android compatibility environment. Supports X86, ARM, and RISC-V . | [![openKylin](https://img.shields.io/badge/openKylin-OS-blue)](https://docs.openkylin.top/) |
-
-| **[Ubuntu-Tiny](https://github.com/ghostplant/ubuntu-tiny)** — **Tiny, faster, power-saving Ubuntu MATE LTS** for x64 and ARM64. 570MB full desktop or 140MB no-desktop version. Supports tablet use cases on compatible hardware . | [![Stars](https://img.shields.io/github/stars/ghostplant/ubuntu-tiny?style=social&color=white)](https://github.com/ghostplant/ubuntu-tiny/stargazers) |
-
-
-
-## 🤝 How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's commercial hardware or open-source software.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## ⚠️ Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Compact tablet hardware is **commercial proprietary technology**; open-source software can extend functionality but cannot bypass locked bootloaders. **Most modern tablets (iPad mini, Legion Y700, Xiaomi Pad Mini, Huawei MatePad Mini) have no Linux or alternative OS support** .
-
-- **Open-source reality**: The open-source ecosystem for compact tablets is **fragmented by device**. **Pixel Tablet with GrapheneOS** is the only officially supported privacy-hardened option , while **older Galaxy Tab models** have LineageOS support  and **Surface Go** has community Linux support via linux-surface . **postmarketOS** extends life to 200+ older devices . For stylus productivity, **Linwood Butterfly** and **NexaNote** provide open-source alternatives to proprietary note apps . The open-source path is **genuinely viable** for specific devices, but **not universally available** across the compact tablet market.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Compact Tablet Hardware Banner" width="100%" />
+</p>
+
+<h1 align="center">📱 Awesome Compact Tablet Hardware 📱</h1>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Compact-Tablet-Hardware?style=flat-square" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Compact-Tablet-Hardware?style=flat-square" alt="License"/>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
+  <strong>Curated Directory of Commercial Hardware &amp; Open-Source Software Projects for Compact Tablets (8–9")</strong><br/>
+  <em>Discover top sub-9-inch tablet devices, Linux/Android OS compatibility, privacy-hardened ROMs &amp; stylus note-taking applications.</em>
+</p>
 
 ---
 
+## 💡 Overview & Introduction
 
+Welcome to the definitive guide on **compact tablet hardware** (8–9 inch form factor) and the **open-source software ecosystem** that powers them! Whether you are seeking a high-performance gaming mini tablet, a privacy-focused GrapheneOS/LineageOS slate, or a Linux-surface convertible, this repository indexes commercial hardware and FOSS alternatives.
 
-**Made for tablet enthusiasts, Linux users, digital note-takers, and open-source advocates.**
+### 🌟 Key Highlights & Use Cases
+- **🎮 Compact Gaming & Portable Power**: High-refresh 8.8" tablets running Snapdragon / Dimensity flagships.
+- **🛡️ Privacy & Security Hardening**: Devices with GrapheneOS, LineageOS, and postmarketOS support.
+- **✏️ Digital Handwriting & Stylus Note-Taking**: Open-source cross-platform canvas and note apps like Linwood Butterfly and NexaNote.
+- **🐧 Mobile Linux**: Microsoft Surface Go & x86/ARM tablet hardware running custom patched Linux kernels.
 
-Let's make compact tablets more open, capable, and long-lasting.
+---
+
+## 📖 Table of Contents
+
+- [🔓 Commercial Hardware & Devices](#-commercial-hardware--devices)
+- [☁️ Cloud & SaaS Services Ecosystem](#️-cloud--saas-services-ecosystem)
+- [🔓 Open-Source Software Projects](#-open-source-software-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#-disclaimer)
+
+---
+
+## 🔓 Commercial Hardware & Devices
+
+> **📊 Market Context & Dynamics**: The global compact tablet market is estimated at **$18.5 Billion (2026)** and is **highly fragmented** across commercial vendors with proprietary bootloaders. Flagship compact devices offer desktop-grade performance, yet operating system freedom remains restricted to specific platforms (such as Google Pixel or Microsoft Surface lines).
+
+| Hardware Device | Category & Highlights | Pricing (Starting Tier) | Linux/Open-Source Support | Vendor Revenue / Size |
+|:---|:---|:---|:---|:---|
+| **[Amazon Fire HD 8](https://www.amazon.com/)** 🛒 | Budget Amazon tablet with Fire OS (Android fork). 8" HD screen, expandable SD storage. | **$99.99** (32GB base with ads) | **None** — locked bootloader. Debloating possible via Fire Toolbox. | **~$638B revenue** (Amazon FY2025) |
+| **[Apple iPad mini (7th Gen)](https://www.apple.com/ipad-mini/)** 🍏 | **Benchmark compact tablet.** 8.3" Liquid Retina, A17 Pro CPU, Apple Pencil Pro & Apple Intelligence support. | **$499.00** (128GB Wi-Fi model) | **None** — locked bootloader. No Linux kernel execution possible. | **~$400B revenue** (Apple FY2025 est.) |
+| **[Pixel Tablet](https://store.google.com/)** 📱 | **GrapheneOS privacy flagship.** 11" IPS, Google Tensor G2 CPU, magnetic speaker dock support. | **$499.00** (128GB Wi-Fi) | **GrapheneOS**: Full official support. **LineageOS**: Officially supported. | **~$350B revenue** (Alphabet FY2025) |
+| **[Microsoft Surface Go 4](https://www.microsoft.com/surface/)** 💻 | **Most Linux-friendly Windows tablet.** 10.5" Touchscreen, Intel N200, integrated kickstand. | **$549.00** (64GB UFS / 8GB RAM) | **Linux**: Community supported via **linux-surface** kernel patches (touch, pen, Wi-Fi work). | **~$281B revenue** (Microsoft FY2025) |
+| **[Samsung Galaxy Tab A9](https://www.samsung.com/)** 📱 | Budget compact Android tablet. 8.7" LCD, MediaTek Helio G99, microSD slot. | **$169.99** (64GB Wi-Fi) | **LineageOS**: Supported on older Galaxy Tab A 8.0 models; A9 community GSI work ongoing. | **~$250B revenue** (Samsung FY2025 est.) |
+| **[HUAWEI MatePad Mini OLED](https://consumer.huawei.com/)** 🎨 | **Lightest OLED tablet.** 260g ultra-lightweight, Kirin 9020 CPU, HarmonyOS 5.1 with stylus support. | **~$650.00** (Estimate, China MSRP) | **None** — HarmonyOS locked bootloader. | **~$100B revenue** (Huawei FY2025 est.) |
+| **[Lenovo Legion Y700 (Gen 5)](https://www.lenovo.com/)** 🎮 | **Best compact gaming tablet.** 8.8" 3K 165Hz display, Snapdragon 8 Elite, 9000mAh battery, dual USB-C. | **~$550.00** (Import retail equivalent) | **None** — Ships with ZUI / Android 16. Bootloader locked on global/CN variants. | **~$60B revenue** (Lenovo FY2025 est.) |
+| **[Xiaomi Pad Mini](https://www.mi.com/)** ⚡ | **Thinnest flagship compact tablet.** 6.5mm profile, Dimensity 9400+, 3K 165Hz display, 67W fast charging. | **~$520.00** (Estimate, China MSRP) | **None** — HyperOS / Android with restricted bootloader unlock. | **~$40B revenue** (Xiaomi FY2025 est.) |
+| **[Alldocube iPlay 50 Mini Pro](https://www.alldocube.com/)** 🛠️ | **Budget 8.4" stock Android tablet.** MediaTek Helio G99, 8GB RAM, 256GB storage, 4G LTE. | **$129.99** (256GB LTE) | **GSI / Treble**: Compatible with Generic System Images (LineageOS GSI / Phh). | **Private OEM** |
+
+---
+
+## ☁️ Cloud & SaaS Services Ecosystem
+
+> **📊 Market Context & Dynamics**: The global cloud note-taking, document reading, and tablet productivity SaaS market is estimated at **$12.2 Billion (2026)** and is **moderately fragmented**, with giant tech platforms competing against specialized, privacy-focused indie platforms.
+
+| SaaS Product / Service ☁️ | Core Capabilities & Functionality 🛠️ | Pricing (Starting Paid Tier) 💳 | Free Tier & Free Trial Limits 🎁 | Vendor Size / Valuation 🏢 |
+|:---|:---|:---|:---|:---|
+| **[Microsoft 365 Cloud](https://www.microsoft.com/microsoft-365)** | Complete cloud suite (Word, Excel, OneNote cloud sync) optimized for tablet touch & pen input. | **$6.99/month** (Personal Plan) | **Free Tier**: Free Office Web & Mobile apps with 5GB OneDrive storage forever. | **~$3.1 Trillion** (Market Cap) |
+| **[Google Workspace](https://workspace.google.com/)** | Cloud document editing, Drive storage, and real-time collaboration with stylus annotations. | **$6.00/user/month** (Business Starter) | **Free Tier**: 15GB free Google Account storage forever across Docs, Sheets, and Drive. | **~$2.2 Trillion** (Market Cap) |
+| **[Readest Cloud](https://github.com/bilingify/readest)** | Multi-device ebook reading progress sync, cross-platform highlight backup, and AI translation API access. | **$4.99/month** (Readest Pro Sync) | **Free Tier**: Free forever with local WebDAV / Google Drive self-sync option; 14-day cloud trial. | **Indie SaaS** (~$1M Valuation) |
+| **[Butterfly Cloud Workspace](https://github.com/LinwoodCloud/Butterfly)** | Cloud synchronization for infinite canvas handwriting notes and multi-user whiteboard sharing. | **$3.50/month** (Hosted Linwood Sync) | **Free Tier**: Free forever for unlimited local device usage and self-hosted WebDAV sync. | **Indie FOSS SaaS** |
+
+---
+
+## 🔓 Open-Source Software Projects
+
+Sorted by star count (descending). The star badge beside each repo links directly to its stargazers page.
+
+| Repository & Project 🚀 | Description & Features 📝 | Star Badge 🌟 |
+|:---|:---|:---|
+| **[LineageOS](https://github.com/LineageOS/android)** 📱 | **Leading alternative Android OS.** Brings updated Android releases to legacy compact tablets like Galaxy Tab series. | [<img src="https://img.shields.io/github/stars/LineageOS/android?style=social&color=white" alt="LineageOS Stars"/>](https://github.com/LineageOS/android/stargazers) |
+| **[Readest](https://github.com/bilingify/readest)** 📚 | **Modern open-source ebook reader for tablets & e-ink.** EPUB, PDF, MOBI, AZW3, FB2, CBZ support, dual-page mode, offline TTS. | [<img src="https://img.shields.io/github/stars/bilingify/readest?style=social&color=white" alt="Readest Stars"/>](https://github.com/bilingify/readest/stargazers) |
+| **[linux-surface](https://github.com/linux-surface/linux-surface)** 🐧 | **Linux kernel & drivers for Microsoft Surface devices.** Enables full touchscreen, stylus pen, and keyboard support on Surface Go. | [<img src="https://img.shields.io/github/stars/linux-surface/linux-surface?style=social&color=white" alt="linux-surface Stars"/>](https://github.com/linux-surface/linux-surface/stargazers) |
+| **[Linwood Butterfly](https://github.com/LinwoodCloud/Butterfly)** ✏️ | **Cross-platform open-source note-taking & sketching app.** Infinite canvas, pressure-sensitive stylus support, PDF annotation. | [<img src="https://img.shields.io/github/stars/LinwoodCloud/Butterfly?style=social&color=white" alt="Butterfly Stars"/>](https://github.com/LinwoodCloud/Butterfly/stargazers) |
+| **[Xournal++](https://github.com/xournalpp/xournalpp)** 🖊️ | **Handwriting note-taking & PDF annotation software.** Optimized for stylus input, pressure sensitivity, and audio recording. | [<img src="https://img.shields.io/github/stars/xournalpp/xournalpp?style=social&color=white" alt="Xournal++ Stars"/>](https://github.com/xournalpp/xournalpp/stargazers) |
+| **[postmarketOS](https://gitlab.com/postmarketOS/pmbootstrap)** 🐧 | **Alpine Linux-based OS for mobile & tablet devices.** Extends the lifespan of 200+ compact mobile devices with main-line Linux. | [<img src="https://img.shields.io/github/stars/postmarketOS/pmbootstrap?style=social&color=white" alt="postmarketOS Stars"/>](https://gitlab.com/postmarketOS/pmbootstrap/-/stargazers) |
+| **[Episteme Reader](https://github.com/Aryan-Raj3112/episteme)** 📖 | **Offline-first document & comic reader.** Kotlin Multiplatform, PDF ink annotations, text-to-speech, network-stripped FOSS edition. | [<img src="https://img.shields.io/github/stars/Aryan-Raj3112/episteme?style=social&color=white" alt="Episteme Stars"/>](https://github.com/Aryan-Raj3112/episteme/stargazers) |
+| **[NexaNote](https://github.com/TheZupZup/NexaNote)** 📝 | **Self-hosted handwriting & stylus note-taking app.** Local-first SQLite storage, REST API / WebDAV sync, Docker support. | [<img src="https://img.shields.io/github/stars/TheZupZup/NexaNote?style=social&color=white" alt="NexaNote Stars"/>](https://github.com/TheZupZup/NexaNote/stargazers) |
+| **[Mobian](https://github.com/tabletseeker/mobian)** 🍥 | **Debian GNU/Linux distribution targeted at mobile touch devices.** Full touch UI, on-screen keyboard, Surface Go compatibility. | [<img src="https://img.shields.io/github/stars/tabletseeker/mobian?style=social&color=white" alt="Mobian Stars"/>](https://github.com/tabletseeker/mobian/stargazers) |
+| **[Ubuntu-Tiny](https://github.com/ghostplant/ubuntu-tiny)** ⚡ | **Lightweight Ubuntu MATE LTS for touch & compact devices.** Tiny memory footprint (570MB desktop), ideal for x86 tablet PCs. | [<img src="https://img.shields.io/github/stars/ghostplant/ubuntu-tiny?style=social&color=white" alt="Ubuntu-Tiny Stars"/>](https://github.com/ghostplant/ubuntu-tiny/stargazers) |
+| **[GrapheneOS](https://grapheneos.org/)** 🛡️ | **Hardened privacy-focused mobile OS.** Hardened AOSP, sandboxed Google Play, verified boot. Supports Google Pixel Tablet. | [<img src="https://img.shields.io/badge/GrapheneOS-Hardened_AOSP-blue?style=social&color=white" alt="GrapheneOS"/>](https://grapheneos.org/) |
+| **[openKylin](https://docs.openkylin.top/)** 🌏 | **Tablet-optimized open-source desktop OS.** Virtual touch keyboard, Android KMRE compatibility, X86/ARM/RISC-V support. | [<img src="https://img.shields.io/badge/openKylin-OS_Project-blue?style=social&color=white" alt="openKylin"/>](https://docs.openkylin.top/) |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions to expand this list of **compact hardware** and **tablet open-source tools** are welcome!
+
+1. 🍴 **Fork** the repository.
+2. 📝 **Add your entry** to `README.md` in the appropriate category following table conventions.
+3. 🔗 Ensure links, specs, and star badges are accurate.
+4. 🚀 **Open a Pull Request** with a brief summary of the added project/hardware.
+
+If you find this list helpful, please consider **starring** 🌟 the repo to help others discover it!
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Compact-Tablet-Hardware&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Compact-Tablet-Hardware&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated directory useful for your compact tablet setup, consider supporting the maintenance and growth of this open-source resource!
+
+- ⭐ **Star** this repository on GitHub to boost visibility.
+- 🔄 **Share** it with fellow tablet enthusiasts, digital note-takers, and Linux users.
+- ☕ **Buy me a coffee**: Support ongoing development via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Thank you for your generous support and contributions! ❤️
+
+---
+
+## ⚠️ Disclaimer
+
+- This directory is a **community-curated index** for informational purposes. Inclusion does not imply official endorsement.
+- **Hardware Bootloader Limitations**: Modern commercial compact tablets often feature locked bootloaders. Operating systems like GrapheneOS or Linux-surface require specific hardware models (e.g., Pixel Tablet or Microsoft Surface Go). Always verify bootloader status on XDA / official project wiki before purchasing.
+- All trademarks and brand names belong to their respective owners.
+
+---
+
+<p align="center">
+  <em>Maintained with ❤️ for tablet enthusiasts, digital note-takers, and open-source advocates worldwide.</em><br/>
+  <em>See also: <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome">Awesome Awesome Awesome</a> list collection.</em>
+</p>
